@@ -113,8 +113,38 @@
   </button>     <!-- solo visually, muesta las palabras-->      
 </div><br>
 <!-- fin carrusel-->
+<br>
 
+<div class="text-center">
+<!-- Inicio spinner-->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-light" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- fin spinner-->
+</div>
 
+<br><br>
 
 <!-- Incio Scrollspy-->
 <content class="text-center">
@@ -213,9 +243,11 @@
 <br><br>
 
 
+<div class="row align-items-start text-center">
+  <div class="col-md-3">
 <!-- Button trigger modal - boton desplega un mensaje -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+  Lanzar demo modal
 </button>
 
 <!-- Modal -->
@@ -230,17 +262,55 @@
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Ventana</button>
       </div>
     </div>
   </div>
 </div>
-
+</div>
 <br><br>
 <!-- Final de Button trigger modal - boton desplega un mensaje -->
 
 
+<div class="col-md-3">
+<!-- Inicio Offcamvas -->
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+</div>
+<br><br>
+<!-- Final Offcanvasl - boton desplega un mensaje -->
+
+<div class="col-md-3">
+<!-- Inicio toasts - live -->
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
+<!-- Final toasts - live  -->
+<br><br>
+</div>
+
+</div>
 
 <!-- Final Boton con link -->
 
