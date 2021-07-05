@@ -1,349 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     <meta name="description" content="" />
+     <meta name="author" content="" />
+     <title>Trabajo 02-06</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-    <title>Proyecto con JS</title>
-
-<!-- Favicon - icono del navegador -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-
-  </head>
-
-  <body>
-
-
-        <!-- Menu de navegacion -->
-
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>  <!-- nav-link active, resalta el link, lo deja como mas negro -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>      <!-- nav-link disabled, desactiva este item en el menu -->
-
-          <!-- Link desplegable en la barra de navegacion -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown </a>
-
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
         
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<!-- Termino de Menu de navegacion -->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
-<section class="container">
-  
-<center><h1>Proyecto con JavaScript</h1></center>
+        <!-- Fuentes de Google-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
 
-<!-- inicio carrusel-->
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/php2.jpg" class="d-block w-100" alt="imagen bootstrap">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Introducción al Desarrollo Web</h5>
-        <p>La practica hace al maestro, pero la ayuda del profe no está de mas.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/CSS.jpg" class="d-block w-100" alt="imagen css">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Introducción al Desarrollo Web</h5>
-        <p>La practica hace al maestro, pero la ayuda del profe no está de mas.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/html5.jpg" class="d-block w-100" alt="imagen html5">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Introducción al Desarrollo Web</h5>
-        <p>La practica hace al maestro, pero la ayuda del profe no está de mas.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="assets/js.png" class="d-block w-100" alt="imagen html5">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Introducción al Desarrollo Web</h5>
-        <p>La practica hace al maestro, pero la ayuda del profe no está de mas.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Sigente</span>
-  </button>     <!-- solo visually, muesta las palabras-->      
-</div><br>
-<!-- fin carrusel-->
+        <!-- Link Archivo CSS-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/radio.css" rel="stylesheet" />
 
+    </head>
 
+    <body id="page-top">											<!-- sticky-top,mantiene pocicion en la paguina -->
 
-<!-- Incio Scrollspy-->
-<content class="text-center">
-<div class="bd-example" >
-  <div class="row">
-    <div class="col-2">
-      <div id="list-example" class="list-group">
-        <a class="list-group-item list-group-item-action" href="#list-item-1">HTML</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">CSS</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">JabaScript</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-4">PHP</a>
-      </div>
-    </div>
-    <div class="col-10" >
-      <!-- <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0"> -->
-        <h4 id="list-item-1">HTML</h4>
-        <p >HTML, Hypertext Markup Language o el lenguaje de marcas hipertexto, con el que se realiza la creación básica de páginas web. Aquí encontrarás manuales, artículos prácticos y muchos complementos para empezar a desarrollar sitios web.
-        HTML es un lenguaje de marcación que sirve para definir el contenido de las páginas web. Se compone en base a etiquetas, también llamadas marcas o tags, con las cuales conseguimos expresar las partes de un documento, cabecera, cuerpo, encabezados, párrafos, etc. En definitiva, el contenido de una página web.
-        HTML es el primer lenguaje que debe aprender cualquier persona interesada en construir un sitio web. A partir del HTML podemos pasar a muchos otros lenguajes interesantes que sirven para hacer cosas diversas y más avanzadas. Es decir, sea cual sea la tecnología, herramienta o gestor de contenido que nos hayamos propuesto aprender, o que tengamos que usar en nuestro día a día, HTML siempre será el lenguaje en el que toda web se construye y, por tanto, es de obligado conocimiento para todos.</p>
-        <h4 id="list-item-2">CSS</h4>
-        <p>CSS son las siglas en inglés para «hojas de estilo en cascada» (cascading style sheets). Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un visitante las visita. Funciona junto al lenguaje HTML, que se encarga del contenido básico de las páginas.
-        Con CSS puedes crear reglas para decirle a tu sitio web cómo quieres mostrar la información y puedes guardar los comandos para elementos de estilo (como fuentes, colores, tamaños, etc.) separados de los que configuran el contenido.</p>
-        <h4 id="list-item-3">JavaScript</h4>
-        <p>JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web. Cuando JavaScript se ejecuta en el navegador, no necesita de un compilador. El navegador lee directamente el código, sin necesidad de terceros. Por tanto, se le reconoce como uno de los tres lenguajes nativos de la web junto a HTML (contenido y su estructura) y a CSS (diseño del contenido y su estructura).
-        No conviene confundir JavaScript con Java, que es un lenguaje de programación muy diferente. La confusión proviene del nombre, registrado por la misma empresa creadora de Java (Sun Microsystems). JavaScript (JS) se creó posteriormente, y la empresa norteamericana lo que hizo simplemente fue cambiar el nombre que le habían puesto sus creadores al comprar el proyecto (LiveScript). El lenguaje de programación Java está orientado a muchas más cosas que la web desde sus inicios..</p>
-        <h4 id="list-item-4">PHP</h4>
-        <p>PHP es un lenguaje de programación de código abierto del lado del servidor que se utiliza principalmente para crear páginas web dinámicas. La abreviatura nació originariamente de “Personal Home Page Tools”, aunque hoy en día se ha convertido en el acrónimo recursivo para “PHP:Hypertext Preprocessor”.
-        Mientras que los lenguajes del lado del cliente como HTML, CSS o JavaScript son interpretados primero por el navegador web en el momento de abrir una página, el código PHP se ejecuta en el servidor web. Allí, los scripts de PHP generan el código HTML que se envía después al navegador. Este no recibe el código real (el script de PHP), sino el resultado de la ejecución del mismo.</p>
-     <!--  </div> -->
-    </div>
-  </div>
-</div>
-</content>
-<!-- fin Scrollspy-->
-
-
-
-<div class="row align-items-start text-center">
-  <div class="col-md-3">
-<!-- Inicio Cards 0 -->
-<div class="card" style="width: 18rem;">
-  <img src="assets/html5.jpg" class="card-img-top" alt="imagen Html">
-  <div class="card-body">
-    <h5 class="card-title">Video Html</h5>
-    <p class="card-text">HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web.</p>
-    <a href="https://www.youtube.com/watch?v=cqMfPS8jPys&list=PLhSj3UTs2_yVHt2DgHky_MzzRC58UHE4z" class="btn btn-primary" target="_blank">Ir Curso en video</a>
-  </div>
-</div>
-<!-- Final Cards 0 -->
-</div>
-
-
-<div class="col-md-3">
-<!-- Inicio Cards 1 -->
-<div class="card" style="width: 18rem;">
-  <img src="assets/CSS.jpg" class="card-img-top" alt="imagen CSS">
-  <div class="card-body">
-    <h5 class="card-title">Video CSS</h5>
-    <p class="card-text">CSS es la abreviatura de Cascading Style Sheets (Hojas de Estilo en Cascada),  este se utiliza para crear hojas de estilo para páginas web.</p>
-    <a href="https://www.youtube.com/watch?v=24gNhTcy6pw&list=PLhSj3UTs2_yU0fGoS1bjpHqky4kCEmTbR" class="btn btn-primary" target="_blank">Ir Curso en video</a>
-  </div>
-</div>
-<!-- Final Cards 1 -->
-</div>
-
-
-<div class="col-md-3">
-<!-- Inicio Cards 2 -->
-<div class="card" style="width: 18rem;">
-  <img src="assets/js.png" class="card-img-top" alt="imagen JavaScript">
-  <div class="card-body">
-    <h5 class="card-title">Video JavaScrip</h5>
-    <p class="card-text">JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web.</p>
-    <a href="https://www.youtube.com/watch?v=RqQ1d1qEWlE&t=7s" class="btn btn-primary" target="_blank">Ir Curso en video</a>
-  </div>
-</div>
-<!-- Final Cards 2 -->
-</div>
-
-
-<div class="col-md-3">
-<!-- Inicio Cards 3 -->
-<div class="card " style="width: 18rem;">
-  <img src="assets/php2.jpg" class="card-img-top" alt="imagen PHP">
-  <div class="card-body">
-    <h5 class="card-title">Video PHP</h5>
-    <p class="card-text">JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web.</p>
-    <a href="https://www.youtube.com/watch?v=m-ovirhigVQ&list=PLEbpWR0TUWTY4pzNo2w8lAlqWNUzc9i1B" class="btn btn-primary" target="_blank">Ir Curso en video</a>
-  </div>
-</div>
-<!-- Final Cards 3 -->
-
-</div>
-</div>
-
-<br><br>
-
-
-<!-- Button trigger modal - boton desplega un mensaje -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<br><br>
-<!-- Final de Button trigger modal - boton desplega un mensaje -->
-
-
-
-<!-- Final Boton con link -->
-
-<div class="d-grid gap">
-<a href="" target="_b" type="button" class="btn btn-primary" >Facultad Autodidacta</a>
-</div>
-<br>
-
-
-
-
-
-
-</section>
-    
-
-
-
-<!-- Inicio Formulario de contacto -->
-
-<div class="container-fluid bg-secondary" id="contacto">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="display-4  text-white">Contacto</h3>
-                    </div>
+        <!-- Barra de Navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">							<!-- fixed-top,mantiene pocicion en parte superior -->
+                <a class="navbar-brand" href="#page-top">Inicio</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link" target="_blank" href="https://envivo.rockandpop.cl/">Inscribete</a></li>
+                      <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.lnkmsc.com/">Acceso</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 text-center text-white h">
-                        <p class="h4">Si tienes dudas escribeme, te enviare contacto del profe :-)</p>
-                    </div>
-                </div>
-                <form id="form_principal">
-                    <div class="row pb-4">
-                        <div class="col-md-6">
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label class="text-white" for="nombre">Nombre</label>
-                                    <input type="text" class="form-control bg-gris" name="nombre" id="nombre">
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <label class="text-white" for="correo">Correo</label>
-                                    <input type="text" class="form-control bg-gris" name="correo" id="correo">
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <div>
-                                        <h3 class="text-white">Tipo de información</h3>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input w3-radio text-white bg-gris" type="radio" name="RadioOptiones" id="inlineRadio1" value="Cursos" checked="">
-                                        <label class="form-check-label text-white" for="inlineRadio1">Ayuda</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input w3-radio text-white bg-gris" type="radio" name="RadioOptiones" id="inlineRadio2" value="Servicios">
-                                        <label class="form-check-label text-white" for="inlineRadio2">Sugerencias</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="form-group col-md-12">
-                                    <input type="text" id="token" class="token" name="token" hidden="">
-                                    <label class="text-white" for="mensaje">Mensaje</label>
-                                    <textarea name="mensaje" id="mensaje" cols="25" rows="8" class="form-control bg-gris"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="submit" id="formulario_principal" class="btn btn-light btn-block">Enviar</button>
-                        </div>
-                    </div>
-                </form>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- Final formulario de contacto -->
+        </nav>
 
 
+        <!-- header, creador de estructura HTML, encabezado. cogigo semantico ayuda al SEO-->
+        <header class="mastheads text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                  <h1 class="masthead-heading mb-0">Visita una Pagina</h1>
+                  <h2 class="masthead-subheading mb-0">como jamás has visto</h2>
+                  <a class="btn btn-primary btn-xl rounded-pill mt-5" target="_blank" href="https://metalcry.com/">Leer Mas</a>
+                </div>							<!-- rounded-pill, permite redondear bordes en 50rem -->
+            </div>
 
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+        </header>
 
 
 
-    
+        <!-- Contenido seccion 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/rock1.jpg" alt="imagen_rock_1" title="imagen_rock_1"/></div>
+                    </div>							<!-- rounded-circle, permite redondear bordes en 0.25rem -->					
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Rock</h2>
+                            <p>La palabra rock se refiere a un estilo de música de los Estados Unidos y viene del inglés "Rock and Roll". Por el siglo VIII apareció en el latín vulgar la palabra rocca, posiblemente de origen céltico. ... El otro rock inglés, no significa piedra o roca, sino que mecer, moverse en un vaivén de un lado a otro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Contenido seccion 1-->
 
-  </body>
+
+        <!-- Contenido seccion 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/rock2.jpg" alt="imagen_rock_2" title="imagen_rock_2"/></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Sobre el rock</h2>
+                            <p>Estilo musical nacido en la década de 1960 como derivación del rock and roll y que se caracteriza por el empleo de melodías y ritmos complejos, con una instrumentación bastante fija (básicamente guitarra eléctrica, bajo eléctrico, teclado y batería) y con un ritmo enérgico subrayado por la potencia del bajo y la batería, todo ello a menudo ligado a una actitud antiautoritaria y provocativa; ha desarrollado multitud de variantes y ha dado paso a nuevos estilos, como el pop, el punk o el heavy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Contenido seccion 2-->
+
+
+        <!-- Contenido seccion 3-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/rock3.jpg" alt="imagen_rock_3" title="imagen_rock_3"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Informacion rock segun Wikipedia</h2>
+                            <p>No debe confundirse con el estilo original de los años 1950 conocido como Rock and roll.
+							Para otros usos de este término, <a href="https://es.wikipedia.org/wiki/Rock">vease Rock.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Contenido seccion 3-->
 
 
 
+        <!-- Indica al navegador que hay un pie de paguina-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-Black small">Victor Silva, Santiago 2021</p></div>
+        </footer>
 
+
+
+    </body>
 </html>
